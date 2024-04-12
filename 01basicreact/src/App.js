@@ -2,7 +2,7 @@
 
 function App() {
   return (
-   <h1>Chai Aur React</h1>
+   <h1>Chai Aur React | Prabhat Pankaj</h1>
   );
 }
 

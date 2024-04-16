@@ -5,11 +5,18 @@ import './App.css'
 
 function App() {
 
-  let counter = 15
+  let [counter, chaiCounter] = useState(15)
+
+  // let counter = 15
 
   const addValue = () => {
-    console.log('clicked', counter);
-    counter += 1
+    // console.log('clicked', counter);
+    // counter += 1
+    chaiCounter(counter + 1)
+  }
+
+  const removeValue = () => {
+    chaiCounter(counter - 1)
   }
 
   return (
@@ -23,7 +30,9 @@ function App() {
       >Add Value {counter}</button>
       <br />
       <br />
-      <button>Remove Value {counter}</button>
+      <button
+      onClick={removeValue}
+      >Remove Value {counter}</button>
       <p>Footer: {counter}</p>
      
     </>
